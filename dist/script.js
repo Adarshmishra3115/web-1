@@ -9,7 +9,7 @@ const humid = document.getElementById("humid");
 const co2 = document.getElementById("co2");
 const so2 = document.getElementById("so2");
    async function getData(cityName) {
-        const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=134ce2764aaa4de192094605251508&q=${cityName}&aqi=yes`);
+        const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=134ce2764aaa4de192094605251508&q=${cityName}&aqi=yes`);
 
         return await promise.json();
     };
